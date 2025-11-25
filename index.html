@@ -1,114 +1,28 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfólio de Gabriel Moreira da Silva</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Gabriel Moreira da Silva</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header-fixo">
+        <div class="container header-container">
+            <div class="logo">Gabriel M. Silva</div>
+            
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-btn">
+                <span class="hamburguer"></span>
+            </label>
 
-        <div class="main-container">
-
-            <main class="coluna-principal">
-                
-                <div class="perfil-header"> 
-                    <div>
-                        <img src="./foto.jpg" alt="Foto de Perfil" width="100" height="100"> 
-                        <h1>Gabriel Moreira da Silva</h1>
-                    </div>
-                    <p>Advogado e Programador, cursando Análise e Desenvolvimento de Sistemas.</p>
-                </div>
-
-                <h2>Sobre</h2>
-                <p>
-                    Olá, Gabriel Moreira da Silva, um aspirante a programador que sempre gostou de tecnologia, e um advogado autônomo em busca de uma transição de carreira.
-                    Atualmente, estou cursando Análise e Desenvolvimento de Sistemas para aprofundar meus conhecimentos e habilidades. 
-                    Tenho paixão por resolver problemas e aprender novas tecnologias.
-                </p>
-
-                <h2>Formação Acadêmica</h2>
-                <div class="lista-formacao">
-                    <h3>Formação superior em Direito</h3>
-                    <p>Faculdade Nacional – 2015 (Vitória/ES).</p>
-
-                    <h3>Pós-graduação Lato Sensu em Direito Aplicado</h3>
-                    <p>Escola da Magistratura – ESMAGES - 2018 (Vitória/ES).</p>
-                    
-                    <h3>Análise e Desenvolvimento de Sistemas</h3>
-                    <p>Cursando na Faesa – 2024.</p>
-                </div>
-
-                <h2>Cursos Complementares</h2>
-                <div class="lista-cursos">
-                    <ul>
-                        <li>Java Básico do Curso em vídeo (2024)</li>
-                        <li>Princípios de Desenvolvimento Ágil de Software, do Coursera, Ministrado pelo Instituto Tecnológico de Aeronáutica - ITA (2024)</li>
-                        <li>Introduction to Game Design, do Coursera, Ministrado pela Epic Games (2025)</li>
-                    </ul>
-                </div>
-                <hr> 
-
-                <h2>Experiência Profissional</h2>
-
-                <h3>Advocacia Autônoma</h3>
-                <p>
-                    Ativa por sete anos, majoritariamente na área civil.
-                </p>
-                
-                <h3>Estágios</h3> 
-                <ul>
-                    <li>Conciliador - Três anos de atuação no 4º Juizado Especial Civil.</li>
-                    <li>VEPEMA – Vara de Penas e Medidas Alternativas.</li>
-                </ul>
-
-                <h2>Linguagens de Programação</h2>
-                <p>
-                    Tenho experiência prática e aprendizado com as seguintes linguagens: Java e Python. Atualmente, aprendendo Html, CSS e JavaScript. 
-                </p>
-                
-                <hr> 
-                
-            </main>
-
-            <aside class="barra-lateral">
-                
-                <p class="email-contato">Email@gmail.com</p> 
-
-                <h2>Entre em contato</h2>
-                <form action="#" method="POST">
-                    <label for="nome">Seu nome?</label><br>
-                    <input type="text" id="nome" name="nome"><br>
-
-                    <label for="email">Seu email?</label><br>
-                    <input type="email" id="email" name="email"><br>
-
-                    <label for="mensagem">Como posso ajudar?</label><br>
-                    <textarea id="mensagem" name="mensagem"></textarea><br><br>
-
-                    <button type="submit">Enviar Mensagem</button> 
-                </form>
-
-                <h2>Interesses</h2>
-                <p>Entre os interesses que tenho no momento estão:</p> 
-                <ul> 
-                    <li>Web Dev e SEO.</li>
-                    <li>Performance e Eficiência de Linguagens de Programação, estudando C.</li>
-                    <li>Inteligência Artificial.</li>
-                    <li>Ciência de Dados.</li>
-                    <li>Desenvolvimento de Jogos.</li> 
-                </ul>
-                
-                <h2>Idiomas</h2>
-                <h3>Inglês</h3>
-                <p>
-                    Boa leitura e listening, com ótima compreensão. Comunicação funcional.
-                </p>
-
-                <h2>Links</h2>
-                <p>
-                    GitHub: https://github.com/GabrielMS92
-                </p>
-            </aside>
+            <nav class="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#formacao">Formação</a>
+                <a href="#interesses">Interesses</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
-        
-    </body>
-</html>
+    </header>
