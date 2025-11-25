@@ -167,7 +167,7 @@ h2 {
 
 /* Hero Section */
 .hero {
-    min-height: 1vh; /* Ocupa quase a tela toda */
+    min-height: 1vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,7 +177,7 @@ h2 {
 
 .hero-content {
     display: flex;
-    flex-direction: column-reverse; /* Imagem em cima no mobile (opcional) ou texto */
+    flex-direction: column-reverse;
     align-items: center;
     gap: 30px;
 }
@@ -271,4 +271,171 @@ h2 {
     gap: 15px;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    background-color: #1e293b;
+    color: white;
+    font-family: inherit;
+}
+
+.btn-submit {
+    padding: 15px;
+    background-color: var(--accent-color);
+    color: #0f1724;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #050911;
+    color: var(--text-muted);
+}
+
+.social-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =========================================
+  4. MEDIA QUERIES 
+  =========================================
+  transformam o layout mobile em Desktop
+*/
+
+@media (min-width: 768px) {
+    /* Ajustes do Header para Desktop */
+    .menu-btn, .menu-checkbox {
+        display: none; /* Esconde o botão hambúrguer */
+    }
+
+    .nav-menu {
+        display: flex; /* Mostra o menu sempre */
+        position: static; /* Remove posicionamento absoluto */
+        flex-direction: row; /* Itens lado a lado */
+        width: auto;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        padding: 0 15px;
+        width: auto;
+    }
+
+    /* Ajuste da Hero Section */
+    .hero-content {
+        flex-direction: row; /* Texto esquerda, Imagem direita */
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .hero-text {
+        align-items: flex-start;
+        max-width: 50%;
+    }
+
+    .hero-img img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Grids */
+    .grid-2-colunas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .grid-cards {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas para interesses */
+    }
+
+    /* =========================================
+   ESTILOS DOS PROJETOS 
+   ========================================= 
+*/
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 coluna */
+    gap: 30px;
+}
+
+.card-projeto {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden; /* Para a imagem não vazar a borda */
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform 0.3s;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.projeto-img {
+    height: 150px;
+    width: 100%;
+   
+}
+
+.projeto-info {
+    padding: 20px;
+}
+
+.projeto-info h3 {
+    margin-top: 0;
+    color: var(--text-main);
+}
+
+.btn-projeto {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid var(--accent-color);
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-projeto:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* =========================================
+   2º BREAKPOINT: DESKTOP 
+   ========================================= 
+*/
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px; /* Aumenta a largura total */
+    }
+
+    .grid-projetos {
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas lado a lado */
+    }
+    
+    h1 {
+        font-size: 3.5rem; /* Título maior em telas grandes */
+    }
+}
+
 }
